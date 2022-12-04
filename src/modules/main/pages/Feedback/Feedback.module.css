@@ -1,0 +1,124 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.title {
+
+    color: cadetblue;
+    text-shadow: cadetblue 0px 0px 100px;
+    font-weight: bold;
+    font-size: 50px;
+    padding-left: 30px;
+    padding-top: 10px;
+
+}
+
+.form {
+
+    margin: 0 auto;
+    margin-top: 30px;
+    min-width: 600px;
+    height: 620px;
+    border: 1px solid cadetblue;
+}
+
+.tabs {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.tab {
+    display: flex;
+    width: 100%;
+    padding: 10px 15px;
+    transition: .3s ease-in-out;
+    color: cadetblue;
+    justify-content: center;
+}
+
+.active_tab {
+
+    background-color: cadetblue;
+    color: #FEFFF1;
+}
+
+
+.section_form {
+    max-width: 400px;
+    margin: 50px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.personal_data, .contacts_data, .address_data {
+    display: flex;
+    flex-direction: column;
+}
+
+.personal_data {
+    width: 400px;
+}
+
+.buttons {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.button {
+    background: cadetblue;
+    padding: 10px 25px;
+    font-size: 12px;
+    border-radius: 100px;
+    border: none;
+    align-self: center;
+    cursor: pointer;
+    color: white;
+
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid cadetblue;
+    margin-bottom: 25px;
+    width: 100%;
+    outline: none;
+    background: transparent;
+    padding: 5px;
+    display: block;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+}
+
+.textarea {
+    height: 200px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    border: 1px solid cadetblue;
+    padding: 10px;
+}
+
+@media screen and (max-width: 769px){
+
+    .title {
+        font-size:35px;
+    }
+    .form {
+        min-width: calc(650/769 * 100vw);
+
+    }
+
+    .personal_data {
+        margin-left: auto;
+        margin-right: auto;
+        width: calc(500/769 * 100vw);
+    }
+
+}
